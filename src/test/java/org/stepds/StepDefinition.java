@@ -1,5 +1,7 @@
 package org.stepds;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.utils.BaseClass;
 
 public class StepDefinition extends BaseClass{
@@ -12,6 +14,11 @@ public class StepDefinition extends BaseClass{
 		implicitlyWait(20);
 		
 		
+		WebElement el = driver.findElement(By.id("email"));
+		el.sendKeys("Srini");
+		
+		WebElement ell = driver.findElement(By.id("pass"));
+		ell.sendKeys("12345");
 		
 	}
 
